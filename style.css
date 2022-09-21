@@ -1,5 +1,8 @@
+
 *{
     box-sizing: border-box;
+    margin:0;
+    padding:0;
 }
 body{
     width: 100%;
@@ -8,14 +11,20 @@ body{
 .logo{
     width: 50px;
 }
+.head1{
+    display: flex;
+    align-items: center;
+    padding:30px 0 0 30px;
+}
 .list1{
     display: flex;
     gap:1em;
 }
 .list2{
     display: flex;
-    gap:1em;
+    gap:5em;
     justify-content: flex-end;
+
 }
 ul{
     list-style-type: none;
@@ -29,11 +38,14 @@ a{
 }
 .head2{
     background-color: rgb(71, 69, 69);
+    height:400px;
+    padding: 70px;
+    
 }
 .h2,.p1,.p11{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 .h2{
     font-size: 500%;
@@ -46,44 +58,114 @@ a{
 .head3{
     background-color: lightblue;
     display: flex;
+    height: 300px;
+    justify-content: center;
+    gap: 3.5em;
+    padding: 25px;
 }
-.d3a{
+.p3,.para3{
+    gap:1.5em;
+}
+.d3{
     display: flex;
     justify-content: flex-end;
+    flex-direction: column; 
+    line-height:2.0;
+}
+.head3b{
+    width:30%;
+    align-items: center;
+    display: flex;
     flex-direction: column;
+    line-height: 1.4;
 }
 .head4{
     background-color:rgb(252, 252, 145);
-}
-.headh4b{
+    height: 300px;
     display: flex;
+    justify-content: center;
+    gap:4.0em;
+    padding: 25px;
+}
+.h4a{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.0;
+}
+.head4b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: linen;
+    line-height:2.0 ;
+    width: 30%;
+}
+.h4,.h5{
+    font-size: 250%;
+}
+.p4,.p5{
+    font-family: sans-serif;
+    font-size: large;
+    font-weight: 300;
 }
 .head5{
     background-color: rgb(1, 1, 12) ;
     color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    gap:3.0em;
+    padding: 25px;
+}
+.h5a{
+    display: flex;
+    flex-direction: column;
+    line-height: 2.0;
+}
+.head5b{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: linen;
+    line-height: 5.0;
+    width: 30%;
 }
 .paragraph5{
     color: white;
 }
 .head6{
     background-color: gray;
+    height: 360px;
 }
 .list6{
     display: flex;
     gap:2.5em;
     justify-content: center;
+    width:100%;
+    height: 50%;
+    flex-wrap: wrap;
 }
 .list6a{
     background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .list6b{
     background-color: linen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .list7{
     background-color: gray;
     display: flex;
     gap:2.5em;
     justify-content: center;
+    height: 60%;
+    width: 90%;
 }
 .list7a{
     background-color: rgb(221, 185, 141);
@@ -96,17 +178,283 @@ a{
     font-size: x-large;
 }
 .footer{
-    background-color: rgb(104, 94, 94);
+    background-color: rgb(29, 29, 37);
+    height: 400px;
+    padding: 45px;
 }
 .ftlist{
     display: flex;
+    justify-content:flex-start;
+    gap:0.5em;
+}
+.fabout{
+    display: flex;
+    justify-content: flex-end;
 }
 .icons2{
     display: flex;
     justify-content:flex-end;
     gap:1.5em;
+    padding: 25px;
+    color: white;
 }
 .endline{
     display: flex;
     justify-content: center;
+    padding: 60px;
 }
+@media all and(min-width:700px){
+    body{
+        height: 100%;
+        width: 100%;
+    }
+}
+.head8{
+    background-color: gray;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    padding: 35px;
+    gap:1.5em;
+}
+.head8a, .head8b{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+}
+.head8a{
+    background-color: pink;
+}
+.head8b{
+    background-color:rgb(247, 247, 148);
+}
+.head9{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    gap:15%;
+    padding: 25px;
+}
+.head9a,.head9b,.head9c,.head9d{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+}
+.head9a{
+    background-color: aliceblue;
+}
+.head9b{
+    background-color: rgb(190, 190, 218);
+}
+.head9c{
+    background-color: rgb(145, 145, 189);
+}
+.head9d{
+    background-color: pink;
+}
+.head10{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    gap:15%;
+    padding: 25px;
+}
+.head10a,.head10b,.head10c,.head10d{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+}
+.head10a{
+    background-color: rgb(212, 212, 139);
+}
+.head10b{
+    background-color: aliceblue;
+}
+.head10c{
+    background-color: rgb(235, 235, 243);
+}
+.head10d{
+    background-color: rgb(172, 172, 224);
+}
+.head11{
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    gap:15%;
+    padding: 25px;
+}
+.head11a,.head11b,.head11c,.head11d{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 60%;
+}
+.head11a{
+    background-color: aliceblue;
+}
+.head11b{
+    background-color: rgb(172, 172, 224);
+} 
+.head11c{
+    background-color: pink;
+}
+.head11d{
+    background-color: rgb(236, 236, 168);
+}
+.head12{
+    background-color: gray;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    padding: 35px;
+    gap:1.5em;
+}
+.head12a,.head12b{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+}
+.head13{
+    background-color: gray;
+    display: flex;
+    height: 250px;
+    justify-content: center;
+    padding: 35px;
+    gap:1.5em;
+}
+.head12a{
+    background-color: rgb(165, 165, 216);
+}
+.head12b{
+    background-color: rgb(223, 223, 158);
+}
+.head13a, .head13b{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40%;
+    align-items: center;
+}
+.head13a{
+    background-color: pink;
+}
+.head13b{
+    background-color: rgb(248, 228, 207);
+}
+.codeedit{
+    background-color: gray;
+    height: 600px;
+    line-height: 2.5;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.codeedt{
+    font-size: 300%;
+    font-family: sans-serif;
+    font-weight: 400;
+}
+.colorpick{
+    background-color: linen;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2.0;
+}
+.w3colors{
+    width:  150px;
+    height: 150px;
+}
+.colorp{
+    font-family: serif;
+    font-size: 300%;
+    font-weight: 500;
+}
+.colors,.codegg,.temp{
+    font-size: larger;
+}
+.codegame{
+    background-color: rgb(132, 202, 179);
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2.0;
+}
+.codeg{
+    font-family:cursive;
+    font-size: 300%;
+    font-weight: 500;
+}
+.codegg{
+    font-family: fantasy;
+}
+.templates{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 2;
+    background-color: rgb(214, 206, 206);
+    padding: 20px;
+}
+.webpic{
+    width:  50%;
+    height: 50%;
+}
+.webtemp{
+    font-family: serif;
+    font-size: 300%;
+    font-weight: 500;
+}
+.head14{
+    background-color: rgb(24, 24, 54);
+    height: 370px;
+    padding: 50px;
+    font-size: 250%;
+    line-height: 2.7;
+}
+.head15{
+    background-color: rgb(255, 253, 250);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    line-height: 1.8;
+    padding: 15px;
+}
+.h15a,.h16a{
+    font-size: 300%;
+    font-family: serif;
+    font-weight: 500;
+}
+.h15b,.h16b{
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+.h15c{
+    font-size: medium;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+.head16{
+    background-color: gray;
+    height: 650px;
+    line-height: 2.5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
